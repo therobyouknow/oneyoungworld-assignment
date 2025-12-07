@@ -1,0 +1,7 @@
+name: 'oyw_salesforce'
+type: module
+description: 'a custom Drupal 11 module that calls Salesforce to populate options for a list field.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - salesforce:salesforce
