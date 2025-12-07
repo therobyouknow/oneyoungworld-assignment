@@ -1,0 +1,34 @@
+sudo certbot --apache
+
+
+rob@server03:/var/www/00-2/oneyoungworld-assignment.solent.london/releases/0.1/code$ sudo certbot --apache
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+Which names would you like to activate HTTPS for?
+We recommend selecting either all domains, or all domains in a VirtualHost/server block.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+7: oneyoungworld-assignment.solent.london
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate numbers separated by commas and/or spaces, or leave input
+blank to select all options shown (Enter 'c' to cancel): 7
+Requesting a certificate for oneyoungworld-assignment.solent.london
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/oneyoungworld-assignment.solent.london/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/oneyoungworld-assignment.solent.london/privkey.pem
+This certificate expires on 2026-03-03.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+
+Deploying certificate
+Successfully deployed certificate for oneyoungworld-assignment.solent.london to /etc/apache2/sites-available/oneyoungworld-assignment.solent.london-le-ssl.conf
+Congratulations! You have successfully enabled HTTPS on https://oneyoungworld-assignment.solent.london
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rob@server03:/var/www/00-2/oneyoungworld-assignment.solent.london/releases/0.1/code$ 
