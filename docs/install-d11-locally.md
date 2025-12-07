@@ -1,28 +1,28 @@
 robdaviswork@192 oneyoungworld-assignment % mkdir code
 robdaviswork@192 oneyoungworld-assignment % cd code
 robdaviswork@192 code % ddev config
-Creating a new DDEV project config in the current directory (/Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code) 
-Once completed, your configuration will be written to /Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code/.ddev/config.yaml
+Creating a new DDEV project config in the current directory (/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code) 
+Once completed, your configuration will be written to /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/.ddev/config.yaml
  
 Project name (code): oneyoungworld-assignment
 
 The docroot is the directory from which your site is served.
-This is a relative path from your project root at /Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code
+This is a relative path from your project root at /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code
  
 Leave docroot empty (hit <RETURN>) to use the location shown in parentheses.
 Or specify a custom path if your index.php is in a different directory.
 Or use '.' (a dot) to explicitly set it to the project root.
  
 Docroot Location (project root): web
-Created docroot at /Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code/web 
+Created docroot at /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web 
  
-Found a php codebase at /Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code/web. 
+Found a php codebase at /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web. 
 Project Type [backdrop, cakephp, craftcms, drupal, drupal6, drupal7, drupal8, drupal9, drupal10, drupal11, generic, laravel, magento, magento2, php, shopware6, silverstripe, symfony, typo3, wordpress] (php): drupal11
 No settings.php file exists, creating one 
 Configuration complete. You may now run 'ddev start'. 
 robdaviswork@192 code % ddev composer create-project drupal/recommended-project .
 The index.php or index.html does not yet exist at this path:
-/Users/robdaviswork/2-work/10-my-projects/oneyoungworld-assignment/code/web/index.*
+/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/index.*
 You may get 403 errors 'permission denied' from the browser until it does.
 Ignore if a later action (like `ddev composer create-project`) will create it.
 
