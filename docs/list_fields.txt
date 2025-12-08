@@ -1,0 +1,114 @@
+https://gemini.google.com/share/0b5a0e9ede49
+
+In modern Drupal (9/10+), the functionality that used to be a standard hook, `hook_options_allowed_values()`, has been replaced by specifying an **`allowed_values_function`** in your field's storage settings. This function acts as a dynamic callback to generate the list of options.
+
+Here is a step-by-step guide on creating and using this callback function:
+
+-----
+
+## 🛠️ Step 1: Define the Callback Function
+
+The dynamic function must be defined in a location where it can be autoloaded, typically in your custom module's **`.module`** file or, for better practice, as a static method in a custom class.
+
+### 📝 Example in a `.module` file:
+
+Create the function in your module's `.module` file (e.g., `mymodule.module`).
+
+```php
+/**
+ * Provides the allowed values for the 'field_dynamic_list'.
+ *
+ * @param \Drupal\field\Entity\FieldStorageConfig $definition
+ * The field storage definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface|null $entity
+ * (optional) The specific entity when this function is called in context.
+ * @param bool $cacheable
+ * (optional) A boolean flag indicating whether the results are cacheable.
+ *
+ * @return array
+ * An associative array of allowed values. Keys are the raw stored values,
+ * values are the display labels.
+ */
+function mymodule_allowed_values_function(
+  \Drupal\field\Entity\FieldStorageConfig $definition,
+  \Drupal\Core\Entity\ContentEntityInterface $entity = NULL,
+  &$cacheable
+) {
+  $options = [];
+
+  // Example: Dynamic values based on a current year.
+  $current_year = date('Y');
+  for ($i = $current_year; $i >= $current_year - 5; $i--) {
+    $options[$i] = 'Year ' . $i;
+  }
+
+  // Example: Dynamic values based on the current entity/bundle context.
+  if ($entity && $entity->getEntityTypeId() == 'node' && $entity->bundle() == 'article') {
+    $options['special'] = 'Special Article Option';
+  }
+
+  // Set the cacheability. If your options are truly dynamic (e.g., based on
+  // the current user or external data), you may need to set this to FALSE.
+  $cacheable = TRUE;
+
+  return $options;
+}
+```
+
+-----
+
+## ⚙️ Step 2: Configure the Field Storage
+
+You need to tell Drupal to use this function for the specific list field (e.g., `list_string`, `list_integer`). This is done by setting the `allowed_values_function` key in the field's storage configuration.
+
+Since this setting is not available in the Field UI, you must **programmatically set it** or modify the configuration file manually.
+
+### 📝 Method A: Programmatic Update (Recommended)
+
+Use an update hook or deployment script to modify the field configuration.
+
+```php
+use Drupal\field\Entity\FieldStorageConfig;
+
+// Load the field storage config (replace 'node' and 'field_my_list').
+$field_storage = FieldStorageConfig::loadByName('node', 'field_my_list');
+
+if ($field_storage) {
+  $field_storage->setSetting(
+    'allowed_values_function',
+    'mymodule_allowed_values_function' // The name of your function.
+  );
+  $field_storage->save();
+}
+```
+
+### 📝 Method B: Configuration Export/Import
+
+1.  **Export** your field's configuration (e.g., `field.storage.node.field_my_list.yml`).
+2.  **Edit** the `.yml` file to add the following under the `settings` key:
+    ```yaml
+    # field.storage.node.field_my_list.yml
+    uuid: ...
+    langcode: en
+    status: true
+    dependencies:
+      module:
+        - node
+        - options
+    # ... other config ...
+    type: list_string
+    settings:
+      allowed_values: {  } # This array must be empty.
+      allowed_values_function: 'mymodule_allowed_values_function'
+    ```
+3.  **Import** the modified configuration.
+
+After configuring the field, your list field will call your custom function whenever it needs the available options (e.g., in forms, Views filters, etc.).
+
+This video introduces the concept of hooks in Drupal, which is the underlying mechanism behind the `allowed_values_function` callback.
+
+[Introduction to Hooks in Drupal 8](https://www.youtube.com/watch?v=Lpv0GAcCzbc)
+
+Would you like to see an example of implementing the callback function as a **static method in a custom class** instead?
+
+http://googleusercontent.com/youtube_content/0

@@ -2,10 +2,8 @@
 
 namespace Drupal\oyw_salesforce;
 
-
-
 /**
- *
+ * research: https://drupal.stackexchange.com/questions/242006/how-do-i-programmatically-update-the-allowed-values-of-a-list-field
  */
 class SalesforceFieldValues {
 
@@ -16,19 +14,3 @@ class SalesforceFieldValues {
     return $options;
   }
 }
-
-
-/*
-
-
-$Door = \Drupal::service('custom_service.door')
-
-
-● Create a new class called "SalesforceFieldValues" that is run by the "options_allowed_values" hook, which populates the values for the "field_gender" field 
-○ The class should call the "getPicklistValues" client method like so: 
-$client->getPicklistValues('field_gender', "['Contact', 'Gender__c']") 
-
-
-$client->getPicklistValues('field_gender', "['Contact', 'Gender__c']") 
-
-*/

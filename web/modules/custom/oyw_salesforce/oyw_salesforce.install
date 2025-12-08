@@ -3,6 +3,11 @@
 use Drupal\field\Entity\FieldStorageConfig;
 
 // credit: https://gemini.google.com/share/0b5a0e9ede49
+// https://gemini.google.com/share/0b65a7a259a1
+
+// use: ddev drush php-eval  "echo \Drupal::service('update.update_hook_registry')->getInstalledVersion('oyw_salesforce');" 
+// to determine version number (and therefore next number to use)
+// credit: https://drupal.stackexchange.com/a/317449/1082
 
 function oyw_salesforce_update_110002() {
   // Load the field storage config (replace 'node' and 'field_my_list').
