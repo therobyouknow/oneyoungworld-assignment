@@ -20,7 +20,7 @@ settings:
     -
       value: other
       label: other
-  allowed_values_function: ''
+  allowed_values_function: oyw_salesforce_allowed_values_function
 module: options
 locked: false
 cardinality: 1
