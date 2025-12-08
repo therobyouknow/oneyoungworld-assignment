@@ -1,0 +1,954 @@
+  - Downloading sebastian/exporter (7.0.2)
+  - Downloading sebastian/environment (8.0.3)
+  - Downloading sebastian/comparator (7.1.3)
+  - Downloading sebastian/cli-parser (4.2.0)
+  - Downloading phpunit/php-timer (8.0.0)
+  - Downloading phpunit/php-text-template (5.0.0)
+  - Downloading phpunit/php-invoker (6.0.0)
+  - Downloading phpunit/php-file-iterator (6.0.0)
+  - Downloading theseer/tokenizer (1.3.1)
+  - Downloading sebastian/lines-of-code (4.0.0)
+  - Downloading sebastian/complexity (5.0.0)
+  - Downloading phpunit/php-code-coverage (12.5.0)
+  - Downloading phpunit/phpunit (12.5.1)
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing sebastian/version (6.0.0): Extracting archive
+  - Installing sebastian/type (6.0.3): Extracting archive
+  - Installing sebastian/recursion-context (7.0.1): Extracting archive
+  - Installing sebastian/object-reflector (5.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+  - Installing sebastian/global-state (8.0.2): Extracting archive
+  - Installing sebastian/exporter (7.0.2): Extracting archive
+  - Installing sebastian/environment (8.0.3): Extracting archive
+  - Installing sebastian/comparator (7.1.3): Extracting archive
+  - Installing sebastian/cli-parser (4.2.0): Extracting archive
+  - Installing phpunit/php-timer (8.0.0): Extracting archive
+  - Installing phpunit/php-text-template (5.0.0): Extracting archive
+  - Installing phpunit/php-invoker (6.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (6.0.0): Extracting archive
+  - Installing theseer/tokenizer (1.3.1): Extracting archive
+  - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+  - Installing sebastian/complexity (5.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (12.5.0): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing myclabs/deep-copy (1.13.4): Extracting archive
+  - Installing phpunit/phpunit (12.5.1): Extracting archive
+2 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Package doctrine/annotations is abandoned, you should avoid using it. No replacement was suggested.
+Generating autoload files
+66 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^12.5 for phpunit/phpunit
+robdaviswork@192 code % ddev composer require phpspec/prophecy-phpunit
+./composer.json has been updated
+Running composer update phpspec/prophecy-phpunit
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 8 installs, 0 updates, 0 removals
+  - Locking doctrine/instantiator (2.0.0)
+  - Locking phpdocumentor/reflection-common (2.2.0)
+  - Locking phpdocumentor/reflection-docblock (5.6.5)
+  - Locking phpdocumentor/type-resolver (1.12.0)
+  - Locking phpspec/prophecy (v1.24.0)
+  - Locking phpspec/prophecy-phpunit (v2.4.0)
+  - Locking phpstan/phpdoc-parser (2.3.0)
+  - Locking webmozart/assert (1.12.1)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 8 installs, 0 updates, 0 removals
+  - Downloading phpdocumentor/type-resolver (1.12.0)
+  - Downloading phpdocumentor/reflection-docblock (5.6.5)
+  - Downloading phpspec/prophecy (v1.24.0)
+  - Installing doctrine/instantiator (2.0.0): Extracting archive
+  - Installing webmozart/assert (1.12.1): Extracting archive
+  - Installing phpstan/phpdoc-parser (2.3.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.12.0): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.6.5): Extracting archive
+  - Installing phpspec/prophecy (v1.24.0): Extracting archive
+  - Installing phpspec/prophecy-phpunit (v2.4.0): Extracting archive
+Package doctrine/annotations is abandoned, you should avoid using it. No replacement was suggested.
+Generating autoload files
+67 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^2.4 for phpspec/prophecy-phpunit
+robdaviswork@192 code % ddev composer require symfony/phpunit-bridge
+The package you required is recommended to be placed in require-dev (because it is tagged as "testing") but you did not use --dev.
+Do you want to re-run the command with --dev? [yes]? yes
+./composer.json has been updated
+Running composer update symfony/phpunit-bridge
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 1 install, 0 updates, 0 removals
+  - Locking symfony/phpunit-bridge (v8.0.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Downloading symfony/phpunit-bridge (v8.0.0)
+  - Installing symfony/phpunit-bridge (v8.0.0): Extracting archive
+Package doctrine/annotations is abandoned, you should avoid using it. No replacement was suggested.
+Generating autoload files
+68 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^8.0 for symfony/phpunit-bridge
+robdaviswork@192 code % ./vendor/bin/phpunit                          
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Usage:
+  phpunit [options] <directory|file> ...
+
+Configuration:
+
+  --bootstrap <file>                   A PHP script that is included before the tests run
+  -c|--configuration <file>            Read configuration from XML file
+  --no-configuration                   Ignore default configuration file (phpunit.xml)
+  --extension <class>                  Register test runner extension with bootstrap <class>
+  --no-extensions                      Do not register test runner extensions
+  --include-path <path(s)>             Prepend PHP's include_path with given path(s)
+  -d <key[=value]>                     Sets a php.ini value
+  --cache-directory <dir>              Specify cache directory
+  --generate-configuration             Generate configuration file with suggested settings
+  --migrate-configuration              Migrate configuration file to current format
+  --generate-baseline <file>           Generate baseline for issues
+  --use-baseline <file>                Use baseline to ignore issues
+  --ignore-baseline                    Do not use baseline to ignore issues
+
+Selection:
+
+  --all                                Ignore test selection from XML configuration file
+  --list-suites                        List available test suites
+  --testsuite <name>                   Only run tests from the specified test suite(s)
+  --exclude-testsuite <name>           Exclude tests from the specified test suite(s)
+  --list-groups                        List available test groups
+  --group <name>                       Only run tests from the specified group(s)
+  --exclude-group <name>               Exclude tests from the specified group(s)
+  --covers <name>                      Only run tests that intend to cover <name>
+  --uses <name>                        Only run tests that intend to use <name>
+  --requires-php-extension <name>      Only run tests that require PHP extension <name>
+  --list-test-files                    List available test files
+  --list-tests                         List available tests
+  --list-tests-xml <file>              List available tests in XML format
+  --filter <pattern>                   Filter which tests to run
+  --exclude-filter <pattern>           Exclude tests for the specified filter pattern
+  --test-suffix <suffixes>             Only search for test in files with specified suffix(es). Default: Test.php,.phpt
+
+Execution:
+
+  --process-isolation                  Run each test in a separate PHP process
+  --globals-backup                     Backup and restore $GLOBALS for each test
+  --static-backup                      Backup and restore static properties for each test
+
+  --strict-coverage                    Be strict about code coverage metadata
+  --strict-global-state                Be strict about changes to global state
+  --disallow-test-output               Be strict about output during tests
+  --enforce-time-limit                 Enforce time limit based on test size
+  --default-time-limit <sec>           Timeout in seconds for tests that have no declared size
+  --do-not-report-useless-tests        Do not report tests that do not test anything
+
+  --stop-on-defect                     Stop after first error, failure, warning, or risky test
+  --stop-on-error                      Stop after first error
+  --stop-on-failure                    Stop after first failure
+  --stop-on-warning                    Stop after first warning
+  --stop-on-risky                      Stop after first risky test
+  --stop-on-deprecation                Stop after first test that triggered a deprecation
+  --stop-on-notice                     Stop after first test that triggered a notice
+  --stop-on-skipped                    Stop after first skipped test
+  --stop-on-incomplete                 Stop after first incomplete test
+
+  --fail-on-empty-test-suite           Signal failure using shell exit code when no tests were run
+  --fail-on-warning                    Signal failure using shell exit code when a warning was triggered
+  --fail-on-risky                      Signal failure using shell exit code when a test was considered risky
+  --fail-on-deprecation                Signal failure using shell exit code when a deprecation was triggered
+  --fail-on-phpunit-deprecation        Signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --fail-on-phpunit-notice             Signal failure using shell exit code when a PHPUnit notice was triggered
+  --fail-on-phpunit-warning            Signal failure using shell exit code when a PHPUnit warning was triggered
+  --fail-on-notice                     Signal failure using shell exit code when a notice was triggered
+  --fail-on-skipped                    Signal failure using shell exit code when a test was skipped
+  --fail-on-incomplete                 Signal failure using shell exit code when a test was marked incomplete
+  --fail-on-all-issues                 Signal failure using shell exit code when an issue is triggered
+
+  --do-not-fail-on-empty-test-suite    Do not signal failure using shell exit code when no tests were run
+  --do-not-fail-on-warning             Do not signal failure using shell exit code when a warning was triggered
+  --do-not-fail-on-risky               Do not signal failure using shell exit code when a test was considered risky
+  --do-not-fail-on-deprecation         Do not signal failure using shell exit code when a deprecation was triggered
+  --do-not-fail-on-phpunit-deprecation Do not signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --do-not-fail-on-phpunit-notice      Do not signal failure using shell exit code when a PHPUnit notice was triggered
+  --do-not-fail-on-phpunit-warning     Do not signal failure using shell exit code when a PHPUnit warning was triggered
+  --do-not-fail-on-notice              Do not signal failure using shell exit code when a notice was triggered
+  --do-not-fail-on-skipped             Do not signal failure using shell exit code when a test was skipped
+  --do-not-fail-on-incomplete          Do not signal failure using shell exit code when a test was marked incomplete
+
+  --cache-result                       Write test results to cache file
+  --do-not-cache-result                Do not write test results to cache file
+
+  --order-by <order>                   Run tests in order: default|defects|depends|duration|no-depends|random|reverse|size
+  --random-order-seed <N>              Use the specified random seed when running tests in random order
+
+Reporting:
+
+  --colors <flag>                      Use colors in output ("never", "auto" or "always")
+  --columns <n>                        Number of columns to use for progress output
+  --columns max                        Use maximum number of columns for progress output
+  --stderr                             Write to STDERR instead of STDOUT
+
+  --no-progress                        Disable output of test execution progress
+  --no-results                         Disable output of test results
+  --no-output                          Disable all output
+
+  --display-incomplete                 Display details for incomplete tests
+  --display-skipped                    Display details for skipped tests
+  --display-deprecations               Display details for deprecations triggered by tests
+  --display-phpunit-deprecations       Display details for PHPUnit deprecations
+  --display-phpunit-notices            Display details for PHPUnit notices
+  --display-errors                     Display details for errors triggered by tests
+  --display-notices                    Display details for notices triggered by tests
+  --display-warnings                   Display details for warnings triggered by tests
+  --display-all-issues                 Display details for all issues that are triggered
+  --reverse-list                       Print defects in reverse order
+
+  --teamcity                           Replace default progress and result output with TeamCity format
+  --testdox                            Replace default result output with TestDox format
+  --testdox-summary                    Repeat TestDox output for tests with errors, failures, or issues
+
+  --debug                              Replace default progress and result output with debugging information
+  --with-telemetry                     Include telemetry information in debugging information output
+
+Logging:
+
+  --log-junit <file>                   Write test results in JUnit XML format to file
+  --log-otr <file>                     Write test results in Open Test Reporting XML format to file
+  --include-git-information            Include Git information in Open Test Reporting XML logfile
+  --log-teamcity <file>                Write test results in TeamCity format to file
+  --testdox-html <file>                Write test results in TestDox format (HTML) to file
+  --testdox-text <file>                Write test results in TestDox format (plain text) to file
+  --log-events-text <file>             Stream events as plain text to file
+  --log-events-verbose-text <file>     Stream events as plain text with extended information to file
+  --no-logging                         Ignore logging configured in the XML configuration file
+
+Code Coverage:
+
+  --coverage-clover <file>             Write code coverage report in Clover XML format to file
+  --coverage-openclover <file>         Write code coverage report in OpenClover XML format to file
+  --coverage-cobertura <file>          Write code coverage report in Cobertura XML format to file
+  --coverage-crap4j <file>             Write code coverage report in Crap4J XML format to file
+  --coverage-html <dir>                Write code coverage report in HTML format to directory
+  --coverage-php <file>                Write serialized code coverage data to file
+  --coverage-text=<file>               Write code coverage report in text format to file [default: standard output]
+  --only-summary-for-coverage-text     Option for code coverage report in text format: only show summary
+  --show-uncovered-for-coverage-text   Option for code coverage report in text format: show uncovered files
+  --coverage-xml <dir>                 Write code coverage report in XML format to directory
+  --exclude-source-from-xml-coverage   Exclude <source> element from code coverage report in XML format
+  --warm-coverage-cache                Warm static analysis cache
+  --coverage-filter <dir>              Include <dir> in code coverage reporting
+  --path-coverage                      Report path coverage in addition to line coverage
+  --disable-coverage-ignore            Disable metadata for ignoring code coverage
+  --no-coverage                        Ignore code coverage reporting configured in the XML configuration file
+
+Miscellaneous:
+
+  -h|--help                            Prints this usage information
+  --version                            Prints the version and exits
+  --atleast-version <min>              Checks that version is greater than <min> and exits
+  --check-version                      Checks whether PHPUnit is the latest version and exits
+  --check-php-configuration            Checks whether PHP configuration follows best practices
+
+robdaviswork@192 code % ./vendor/bin/phpunit --testsuite "Unit" --filter "OywRestClientTest"
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Usage:
+  phpunit [options] <directory|file> ...
+
+Configuration:
+
+  --bootstrap <file>                   A PHP script that is included before the tests run
+  -c|--configuration <file>            Read configuration from XML file
+  --no-configuration                   Ignore default configuration file (phpunit.xml)
+  --extension <class>                  Register test runner extension with bootstrap <class>
+  --no-extensions                      Do not register test runner extensions
+  --include-path <path(s)>             Prepend PHP's include_path with given path(s)
+  -d <key[=value]>                     Sets a php.ini value
+  --cache-directory <dir>              Specify cache directory
+  --generate-configuration             Generate configuration file with suggested settings
+  --migrate-configuration              Migrate configuration file to current format
+  --generate-baseline <file>           Generate baseline for issues
+  --use-baseline <file>                Use baseline to ignore issues
+  --ignore-baseline                    Do not use baseline to ignore issues
+
+Selection:
+
+  --all                                Ignore test selection from XML configuration file
+  --list-suites                        List available test suites
+  --testsuite <name>                   Only run tests from the specified test suite(s)
+  --exclude-testsuite <name>           Exclude tests from the specified test suite(s)
+  --list-groups                        List available test groups
+  --group <name>                       Only run tests from the specified group(s)
+  --exclude-group <name>               Exclude tests from the specified group(s)
+  --covers <name>                      Only run tests that intend to cover <name>
+  --uses <name>                        Only run tests that intend to use <name>
+  --requires-php-extension <name>      Only run tests that require PHP extension <name>
+  --list-test-files                    List available test files
+  --list-tests                         List available tests
+  --list-tests-xml <file>              List available tests in XML format
+  --filter <pattern>                   Filter which tests to run
+  --exclude-filter <pattern>           Exclude tests for the specified filter pattern
+  --test-suffix <suffixes>             Only search for test in files with specified suffix(es). Default: Test.php,.phpt
+
+Execution:
+
+  --process-isolation                  Run each test in a separate PHP process
+  --globals-backup                     Backup and restore $GLOBALS for each test
+  --static-backup                      Backup and restore static properties for each test
+
+  --strict-coverage                    Be strict about code coverage metadata
+  --strict-global-state                Be strict about changes to global state
+  --disallow-test-output               Be strict about output during tests
+  --enforce-time-limit                 Enforce time limit based on test size
+  --default-time-limit <sec>           Timeout in seconds for tests that have no declared size
+  --do-not-report-useless-tests        Do not report tests that do not test anything
+
+  --stop-on-defect                     Stop after first error, failure, warning, or risky test
+  --stop-on-error                      Stop after first error
+  --stop-on-failure                    Stop after first failure
+  --stop-on-warning                    Stop after first warning
+  --stop-on-risky                      Stop after first risky test
+  --stop-on-deprecation                Stop after first test that triggered a deprecation
+  --stop-on-notice                     Stop after first test that triggered a notice
+  --stop-on-skipped                    Stop after first skipped test
+  --stop-on-incomplete                 Stop after first incomplete test
+
+  --fail-on-empty-test-suite           Signal failure using shell exit code when no tests were run
+  --fail-on-warning                    Signal failure using shell exit code when a warning was triggered
+  --fail-on-risky                      Signal failure using shell exit code when a test was considered risky
+  --fail-on-deprecation                Signal failure using shell exit code when a deprecation was triggered
+  --fail-on-phpunit-deprecation        Signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --fail-on-phpunit-notice             Signal failure using shell exit code when a PHPUnit notice was triggered
+  --fail-on-phpunit-warning            Signal failure using shell exit code when a PHPUnit warning was triggered
+  --fail-on-notice                     Signal failure using shell exit code when a notice was triggered
+  --fail-on-skipped                    Signal failure using shell exit code when a test was skipped
+  --fail-on-incomplete                 Signal failure using shell exit code when a test was marked incomplete
+  --fail-on-all-issues                 Signal failure using shell exit code when an issue is triggered
+
+  --do-not-fail-on-empty-test-suite    Do not signal failure using shell exit code when no tests were run
+  --do-not-fail-on-warning             Do not signal failure using shell exit code when a warning was triggered
+  --do-not-fail-on-risky               Do not signal failure using shell exit code when a test was considered risky
+  --do-not-fail-on-deprecation         Do not signal failure using shell exit code when a deprecation was triggered
+  --do-not-fail-on-phpunit-deprecation Do not signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --do-not-fail-on-phpunit-notice      Do not signal failure using shell exit code when a PHPUnit notice was triggered
+  --do-not-fail-on-phpunit-warning     Do not signal failure using shell exit code when a PHPUnit warning was triggered
+  --do-not-fail-on-notice              Do not signal failure using shell exit code when a notice was triggered
+  --do-not-fail-on-skipped             Do not signal failure using shell exit code when a test was skipped
+  --do-not-fail-on-incomplete          Do not signal failure using shell exit code when a test was marked incomplete
+
+  --cache-result                       Write test results to cache file
+  --do-not-cache-result                Do not write test results to cache file
+
+  --order-by <order>                   Run tests in order: default|defects|depends|duration|no-depends|random|reverse|size
+  --random-order-seed <N>              Use the specified random seed when running tests in random order
+
+Reporting:
+
+  --colors <flag>                      Use colors in output ("never", "auto" or "always")
+  --columns <n>                        Number of columns to use for progress output
+  --columns max                        Use maximum number of columns for progress output
+  --stderr                             Write to STDERR instead of STDOUT
+
+  --no-progress                        Disable output of test execution progress
+  --no-results                         Disable output of test results
+  --no-output                          Disable all output
+
+  --display-incomplete                 Display details for incomplete tests
+  --display-skipped                    Display details for skipped tests
+  --display-deprecations               Display details for deprecations triggered by tests
+  --display-phpunit-deprecations       Display details for PHPUnit deprecations
+  --display-phpunit-notices            Display details for PHPUnit notices
+  --display-errors                     Display details for errors triggered by tests
+  --display-notices                    Display details for notices triggered by tests
+  --display-warnings                   Display details for warnings triggered by tests
+  --display-all-issues                 Display details for all issues that are triggered
+  --reverse-list                       Print defects in reverse order
+
+  --teamcity                           Replace default progress and result output with TeamCity format
+  --testdox                            Replace default result output with TestDox format
+  --testdox-summary                    Repeat TestDox output for tests with errors, failures, or issues
+
+  --debug                              Replace default progress and result output with debugging information
+  --with-telemetry                     Include telemetry information in debugging information output
+
+Logging:
+
+  --log-junit <file>                   Write test results in JUnit XML format to file
+  --log-otr <file>                     Write test results in Open Test Reporting XML format to file
+  --include-git-information            Include Git information in Open Test Reporting XML logfile
+  --log-teamcity <file>                Write test results in TeamCity format to file
+  --testdox-html <file>                Write test results in TestDox format (HTML) to file
+  --testdox-text <file>                Write test results in TestDox format (plain text) to file
+  --log-events-text <file>             Stream events as plain text to file
+  --log-events-verbose-text <file>     Stream events as plain text with extended information to file
+  --no-logging                         Ignore logging configured in the XML configuration file
+
+Code Coverage:
+
+  --coverage-clover <file>             Write code coverage report in Clover XML format to file
+  --coverage-openclover <file>         Write code coverage report in OpenClover XML format to file
+  --coverage-cobertura <file>          Write code coverage report in Cobertura XML format to file
+  --coverage-crap4j <file>             Write code coverage report in Crap4J XML format to file
+  --coverage-html <dir>                Write code coverage report in HTML format to directory
+  --coverage-php <file>                Write serialized code coverage data to file
+  --coverage-text=<file>               Write code coverage report in text format to file [default: standard output]
+  --only-summary-for-coverage-text     Option for code coverage report in text format: only show summary
+  --show-uncovered-for-coverage-text   Option for code coverage report in text format: show uncovered files
+  --coverage-xml <dir>                 Write code coverage report in XML format to directory
+  --exclude-source-from-xml-coverage   Exclude <source> element from code coverage report in XML format
+  --warm-coverage-cache                Warm static analysis cache
+  --coverage-filter <dir>              Include <dir> in code coverage reporting
+  --path-coverage                      Report path coverage in addition to line coverage
+  --disable-coverage-ignore            Disable metadata for ignoring code coverage
+  --no-coverage                        Ignore code coverage reporting configured in the XML configuration file
+
+Miscellaneous:
+
+  -h|--help                            Prints this usage information
+  --version                            Prints the version and exits
+  --atleast-version <min>              Checks that version is greater than <min> and exits
+  --check-version                      Checks whether PHPUnit is the latest version and exits
+  --check-php-configuration            Checks whether PHP configuration follows best practices
+
+robdaviswork@192 code % ./vendor/bin/phpunit --testsuite "Unit" --filter "OywRestClientTest"
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Usage:
+  phpunit [options] <directory|file> ...
+
+Configuration:
+
+  --bootstrap <file>                   A PHP script that is included before the tests run
+  -c|--configuration <file>            Read configuration from XML file
+  --no-configuration                   Ignore default configuration file (phpunit.xml)
+  --extension <class>                  Register test runner extension with bootstrap <class>
+  --no-extensions                      Do not register test runner extensions
+  --include-path <path(s)>             Prepend PHP's include_path with given path(s)
+  -d <key[=value]>                     Sets a php.ini value
+  --cache-directory <dir>              Specify cache directory
+  --generate-configuration             Generate configuration file with suggested settings
+  --migrate-configuration              Migrate configuration file to current format
+  --generate-baseline <file>           Generate baseline for issues
+  --use-baseline <file>                Use baseline to ignore issues
+  --ignore-baseline                    Do not use baseline to ignore issues
+
+Selection:
+
+  --all                                Ignore test selection from XML configuration file
+  --list-suites                        List available test suites
+  --testsuite <name>                   Only run tests from the specified test suite(s)
+  --exclude-testsuite <name>           Exclude tests from the specified test suite(s)
+  --list-groups                        List available test groups
+  --group <name>                       Only run tests from the specified group(s)
+  --exclude-group <name>               Exclude tests from the specified group(s)
+  --covers <name>                      Only run tests that intend to cover <name>
+  --uses <name>                        Only run tests that intend to use <name>
+  --requires-php-extension <name>      Only run tests that require PHP extension <name>
+  --list-test-files                    List available test files
+  --list-tests                         List available tests
+  --list-tests-xml <file>              List available tests in XML format
+  --filter <pattern>                   Filter which tests to run
+  --exclude-filter <pattern>           Exclude tests for the specified filter pattern
+  --test-suffix <suffixes>             Only search for test in files with specified suffix(es). Default: Test.php,.phpt
+
+Execution:
+
+  --process-isolation                  Run each test in a separate PHP process
+  --globals-backup                     Backup and restore $GLOBALS for each test
+  --static-backup                      Backup and restore static properties for each test
+
+  --strict-coverage                    Be strict about code coverage metadata
+  --strict-global-state                Be strict about changes to global state
+  --disallow-test-output               Be strict about output during tests
+  --enforce-time-limit                 Enforce time limit based on test size
+  --default-time-limit <sec>           Timeout in seconds for tests that have no declared size
+  --do-not-report-useless-tests        Do not report tests that do not test anything
+
+  --stop-on-defect                     Stop after first error, failure, warning, or risky test
+  --stop-on-error                      Stop after first error
+  --stop-on-failure                    Stop after first failure
+  --stop-on-warning                    Stop after first warning
+  --stop-on-risky                      Stop after first risky test
+  --stop-on-deprecation                Stop after first test that triggered a deprecation
+  --stop-on-notice                     Stop after first test that triggered a notice
+  --stop-on-skipped                    Stop after first skipped test
+  --stop-on-incomplete                 Stop after first incomplete test
+
+  --fail-on-empty-test-suite           Signal failure using shell exit code when no tests were run
+  --fail-on-warning                    Signal failure using shell exit code when a warning was triggered
+  --fail-on-risky                      Signal failure using shell exit code when a test was considered risky
+  --fail-on-deprecation                Signal failure using shell exit code when a deprecation was triggered
+  --fail-on-phpunit-deprecation        Signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --fail-on-phpunit-notice             Signal failure using shell exit code when a PHPUnit notice was triggered
+  --fail-on-phpunit-warning            Signal failure using shell exit code when a PHPUnit warning was triggered
+  --fail-on-notice                     Signal failure using shell exit code when a notice was triggered
+  --fail-on-skipped                    Signal failure using shell exit code when a test was skipped
+  --fail-on-incomplete                 Signal failure using shell exit code when a test was marked incomplete
+  --fail-on-all-issues                 Signal failure using shell exit code when an issue is triggered
+
+  --do-not-fail-on-empty-test-suite    Do not signal failure using shell exit code when no tests were run
+  --do-not-fail-on-warning             Do not signal failure using shell exit code when a warning was triggered
+  --do-not-fail-on-risky               Do not signal failure using shell exit code when a test was considered risky
+  --do-not-fail-on-deprecation         Do not signal failure using shell exit code when a deprecation was triggered
+  --do-not-fail-on-phpunit-deprecation Do not signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --do-not-fail-on-phpunit-notice      Do not signal failure using shell exit code when a PHPUnit notice was triggered
+  --do-not-fail-on-phpunit-warning     Do not signal failure using shell exit code when a PHPUnit warning was triggered
+  --do-not-fail-on-notice              Do not signal failure using shell exit code when a notice was triggered
+  --do-not-fail-on-skipped             Do not signal failure using shell exit code when a test was skipped
+  --do-not-fail-on-incomplete          Do not signal failure using shell exit code when a test was marked incomplete
+
+  --cache-result                       Write test results to cache file
+  --do-not-cache-result                Do not write test results to cache file
+
+  --order-by <order>                   Run tests in order: default|defects|depends|duration|no-depends|random|reverse|size
+  --random-order-seed <N>              Use the specified random seed when running tests in random order
+
+Reporting:
+
+  --colors <flag>                      Use colors in output ("never", "auto" or "always")
+  --columns <n>                        Number of columns to use for progress output
+  --columns max                        Use maximum number of columns for progress output
+  --stderr                             Write to STDERR instead of STDOUT
+
+  --no-progress                        Disable output of test execution progress
+  --no-results                         Disable output of test results
+  --no-output                          Disable all output
+
+  --display-incomplete                 Display details for incomplete tests
+  --display-skipped                    Display details for skipped tests
+  --display-deprecations               Display details for deprecations triggered by tests
+  --display-phpunit-deprecations       Display details for PHPUnit deprecations
+  --display-phpunit-notices            Display details for PHPUnit notices
+  --display-errors                     Display details for errors triggered by tests
+  --display-notices                    Display details for notices triggered by tests
+  --display-warnings                   Display details for warnings triggered by tests
+  --display-all-issues                 Display details for all issues that are triggered
+  --reverse-list                       Print defects in reverse order
+
+  --teamcity                           Replace default progress and result output with TeamCity format
+  --testdox                            Replace default result output with TestDox format
+  --testdox-summary                    Repeat TestDox output for tests with errors, failures, or issues
+
+  --debug                              Replace default progress and result output with debugging information
+  --with-telemetry                     Include telemetry information in debugging information output
+
+Logging:
+
+  --log-junit <file>                   Write test results in JUnit XML format to file
+  --log-otr <file>                     Write test results in Open Test Reporting XML format to file
+  --include-git-information            Include Git information in Open Test Reporting XML logfile
+  --log-teamcity <file>                Write test results in TeamCity format to file
+  --testdox-html <file>                Write test results in TestDox format (HTML) to file
+  --testdox-text <file>                Write test results in TestDox format (plain text) to file
+  --log-events-text <file>             Stream events as plain text to file
+  --log-events-verbose-text <file>     Stream events as plain text with extended information to file
+  --no-logging                         Ignore logging configured in the XML configuration file
+
+Code Coverage:
+
+  --coverage-clover <file>             Write code coverage report in Clover XML format to file
+  --coverage-openclover <file>         Write code coverage report in OpenClover XML format to file
+  --coverage-cobertura <file>          Write code coverage report in Cobertura XML format to file
+  --coverage-crap4j <file>             Write code coverage report in Crap4J XML format to file
+  --coverage-html <dir>                Write code coverage report in HTML format to directory
+  --coverage-php <file>                Write serialized code coverage data to file
+  --coverage-text=<file>               Write code coverage report in text format to file [default: standard output]
+  --only-summary-for-coverage-text     Option for code coverage report in text format: only show summary
+  --show-uncovered-for-coverage-text   Option for code coverage report in text format: show uncovered files
+  --coverage-xml <dir>                 Write code coverage report in XML format to directory
+  --exclude-source-from-xml-coverage   Exclude <source> element from code coverage report in XML format
+  --warm-coverage-cache                Warm static analysis cache
+  --coverage-filter <dir>              Include <dir> in code coverage reporting
+  --path-coverage                      Report path coverage in addition to line coverage
+  --disable-coverage-ignore            Disable metadata for ignoring code coverage
+  --no-coverage                        Ignore code coverage reporting configured in the XML configuration file
+
+Miscellaneous:
+
+  -h|--help                            Prints this usage information
+  --version                            Prints the version and exits
+  --atleast-version <min>              Checks that version is greater than <min> and exits
+  --check-version                      Checks whether PHPUnit is the latest version and exits
+  --check-php-configuration            Checks whether PHP configuration follows best practices
+
+robdaviswork@192 code % ./vendor/bin/phpunit --testsuite "Unit" --filter "OywRestClientTest"
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Usage:
+  phpunit [options] <directory|file> ...
+
+Configuration:
+
+  --bootstrap <file>                   A PHP script that is included before the tests run
+  -c|--configuration <file>            Read configuration from XML file
+  --no-configuration                   Ignore default configuration file (phpunit.xml)
+  --extension <class>                  Register test runner extension with bootstrap <class>
+  --no-extensions                      Do not register test runner extensions
+  --include-path <path(s)>             Prepend PHP's include_path with given path(s)
+  -d <key[=value]>                     Sets a php.ini value
+  --cache-directory <dir>              Specify cache directory
+  --generate-configuration             Generate configuration file with suggested settings
+  --migrate-configuration              Migrate configuration file to current format
+  --generate-baseline <file>           Generate baseline for issues
+  --use-baseline <file>                Use baseline to ignore issues
+  --ignore-baseline                    Do not use baseline to ignore issues
+
+Selection:
+
+  --all                                Ignore test selection from XML configuration file
+  --list-suites                        List available test suites
+  --testsuite <name>                   Only run tests from the specified test suite(s)
+  --exclude-testsuite <name>           Exclude tests from the specified test suite(s)
+  --list-groups                        List available test groups
+  --group <name>                       Only run tests from the specified group(s)
+  --exclude-group <name>               Exclude tests from the specified group(s)
+  --covers <name>                      Only run tests that intend to cover <name>
+  --uses <name>                        Only run tests that intend to use <name>
+  --requires-php-extension <name>      Only run tests that require PHP extension <name>
+  --list-test-files                    List available test files
+  --list-tests                         List available tests
+  --list-tests-xml <file>              List available tests in XML format
+  --filter <pattern>                   Filter which tests to run
+  --exclude-filter <pattern>           Exclude tests for the specified filter pattern
+  --test-suffix <suffixes>             Only search for test in files with specified suffix(es). Default: Test.php,.phpt
+
+Execution:
+
+  --process-isolation                  Run each test in a separate PHP process
+  --globals-backup                     Backup and restore $GLOBALS for each test
+  --static-backup                      Backup and restore static properties for each test
+
+  --strict-coverage                    Be strict about code coverage metadata
+  --strict-global-state                Be strict about changes to global state
+  --disallow-test-output               Be strict about output during tests
+  --enforce-time-limit                 Enforce time limit based on test size
+  --default-time-limit <sec>           Timeout in seconds for tests that have no declared size
+  --do-not-report-useless-tests        Do not report tests that do not test anything
+
+  --stop-on-defect                     Stop after first error, failure, warning, or risky test
+  --stop-on-error                      Stop after first error
+  --stop-on-failure                    Stop after first failure
+  --stop-on-warning                    Stop after first warning
+  --stop-on-risky                      Stop after first risky test
+  --stop-on-deprecation                Stop after first test that triggered a deprecation
+  --stop-on-notice                     Stop after first test that triggered a notice
+  --stop-on-skipped                    Stop after first skipped test
+  --stop-on-incomplete                 Stop after first incomplete test
+
+  --fail-on-empty-test-suite           Signal failure using shell exit code when no tests were run
+  --fail-on-warning                    Signal failure using shell exit code when a warning was triggered
+  --fail-on-risky                      Signal failure using shell exit code when a test was considered risky
+  --fail-on-deprecation                Signal failure using shell exit code when a deprecation was triggered
+  --fail-on-phpunit-deprecation        Signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --fail-on-phpunit-notice             Signal failure using shell exit code when a PHPUnit notice was triggered
+  --fail-on-phpunit-warning            Signal failure using shell exit code when a PHPUnit warning was triggered
+  --fail-on-notice                     Signal failure using shell exit code when a notice was triggered
+  --fail-on-skipped                    Signal failure using shell exit code when a test was skipped
+  --fail-on-incomplete                 Signal failure using shell exit code when a test was marked incomplete
+  --fail-on-all-issues                 Signal failure using shell exit code when an issue is triggered
+
+  --do-not-fail-on-empty-test-suite    Do not signal failure using shell exit code when no tests were run
+  --do-not-fail-on-warning             Do not signal failure using shell exit code when a warning was triggered
+  --do-not-fail-on-risky               Do not signal failure using shell exit code when a test was considered risky
+  --do-not-fail-on-deprecation         Do not signal failure using shell exit code when a deprecation was triggered
+  --do-not-fail-on-phpunit-deprecation Do not signal failure using shell exit code when a PHPUnit deprecation was triggered
+  --do-not-fail-on-phpunit-notice      Do not signal failure using shell exit code when a PHPUnit notice was triggered
+  --do-not-fail-on-phpunit-warning     Do not signal failure using shell exit code when a PHPUnit warning was triggered
+  --do-not-fail-on-notice              Do not signal failure using shell exit code when a notice was triggered
+  --do-not-fail-on-skipped             Do not signal failure using shell exit code when a test was skipped
+  --do-not-fail-on-incomplete          Do not signal failure using shell exit code when a test was marked incomplete
+
+  --cache-result                       Write test results to cache file
+  --do-not-cache-result                Do not write test results to cache file
+
+  --order-by <order>                   Run tests in order: default|defects|depends|duration|no-depends|random|reverse|size
+  --random-order-seed <N>              Use the specified random seed when running tests in random order
+
+Reporting:
+
+  --colors <flag>                      Use colors in output ("never", "auto" or "always")
+  --columns <n>                        Number of columns to use for progress output
+  --columns max                        Use maximum number of columns for progress output
+  --stderr                             Write to STDERR instead of STDOUT
+
+  --no-progress                        Disable output of test execution progress
+  --no-results                         Disable output of test results
+  --no-output                          Disable all output
+
+  --display-incomplete                 Display details for incomplete tests
+  --display-skipped                    Display details for skipped tests
+  --display-deprecations               Display details for deprecations triggered by tests
+  --display-phpunit-deprecations       Display details for PHPUnit deprecations
+  --display-phpunit-notices            Display details for PHPUnit notices
+  --display-errors                     Display details for errors triggered by tests
+  --display-notices                    Display details for notices triggered by tests
+  --display-warnings                   Display details for warnings triggered by tests
+  --display-all-issues                 Display details for all issues that are triggered
+  --reverse-list                       Print defects in reverse order
+
+  --teamcity                           Replace default progress and result output with TeamCity format
+  --testdox                            Replace default result output with TestDox format
+  --testdox-summary                    Repeat TestDox output for tests with errors, failures, or issues
+
+  --debug                              Replace default progress and result output with debugging information
+  --with-telemetry                     Include telemetry information in debugging information output
+
+Logging:
+
+  --log-junit <file>                   Write test results in JUnit XML format to file
+  --log-otr <file>                     Write test results in Open Test Reporting XML format to file
+  --include-git-information            Include Git information in Open Test Reporting XML logfile
+  --log-teamcity <file>                Write test results in TeamCity format to file
+  --testdox-html <file>                Write test results in TestDox format (HTML) to file
+  --testdox-text <file>                Write test results in TestDox format (plain text) to file
+  --log-events-text <file>             Stream events as plain text to file
+  --log-events-verbose-text <file>     Stream events as plain text with extended information to file
+  --no-logging                         Ignore logging configured in the XML configuration file
+
+Code Coverage:
+
+  --coverage-clover <file>             Write code coverage report in Clover XML format to file
+  --coverage-openclover <file>         Write code coverage report in OpenClover XML format to file
+  --coverage-cobertura <file>          Write code coverage report in Cobertura XML format to file
+  --coverage-crap4j <file>             Write code coverage report in Crap4J XML format to file
+  --coverage-html <dir>                Write code coverage report in HTML format to directory
+  --coverage-php <file>                Write serialized code coverage data to file
+  --coverage-text=<file>               Write code coverage report in text format to file [default: standard output]
+  --only-summary-for-coverage-text     Option for code coverage report in text format: only show summary
+  --show-uncovered-for-coverage-text   Option for code coverage report in text format: show uncovered files
+  --coverage-xml <dir>                 Write code coverage report in XML format to directory
+  --exclude-source-from-xml-coverage   Exclude <source> element from code coverage report in XML format
+  --warm-coverage-cache                Warm static analysis cache
+  --coverage-filter <dir>              Include <dir> in code coverage reporting
+  --path-coverage                      Report path coverage in addition to line coverage
+  --disable-coverage-ignore            Disable metadata for ignoring code coverage
+  --no-coverage                        Ignore code coverage reporting configured in the XML configuration file
+
+Miscellaneous:
+
+  -h|--help                            Prints this usage information
+  --version                            Prints the version and exits
+  --atleast-version <min>              Checks that version is greater than <min> and exits
+  --check-version                      Checks whether PHPUnit is the latest version and exits
+  --check-php-configuration            Checks whether PHP configuration follows best practices
+
+robdaviswork@192 code % ddev drush cr
+ [success] Cache rebuild complete.
+robdaviswork@192 code % ./vendor/bin/phpunit -c web/phpunit.xml web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Cannot open bootstrap script "/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/tests/bootstrap.php"
+robdaviswork@192 code % cat "/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/tests/bootstrap.php"
+cat: /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/tests/bootstrap.php: No such file or directory
+robdaviswork@192 code % ./vendor/bin/phpunit -c web/phpunit.xml web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+PHP Warning:  Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+
+Warning: Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Error in bootstrap script: Error:
+Class "Behat\Mink\Element\TraversableElement" not found
+#0 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(576): include()
+#1 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/Users/robdavis...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('Drupal\\Tests\\Do...')
+#3 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php(148): class_alias('\\Drupal\\Tests\\D...', '\\Behat\\Mink\\Ele...', true)
+#4 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(61): include_once('/Users/robdavis...')
+#5 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(36): PHPUnit\TextUI\Configuration\BootstrapLoader->load('/Users/robdavis...')
+#6 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(132): PHPUnit\TextUI\Configuration\BootstrapLoader->handle(Object(PHPUnit\TextUI\Configuration\Configuration))
+#7 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#8 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/bin/phpunit(122): include('/Users/robdavis...')
+#9 {main}
+robdaviswork@192 code % ddev composer require --dev drupal/core-dev
+./composer.json has been updated
+Running composer update drupal/core-dev
+Loading composer repositories with package information
+Updating dependencies
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires drupal/core-dev * -> satisfiable by drupal/core-dev[8.0.0, ..., 8.9.20, 9.0.0, ..., 9.5.11, 10.0.0, ..., 10.5.7, 11.0.0, ..., 11.2.9].
+    - drupal/core-dev[10.0.0, ..., 10.1.8] require phpunit/phpunit ^9.5 -> found phpunit/phpunit[9.5.0, ..., 9.6.31] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[10.2.0, ..., 10.5.7] require phpunit/phpunit ^9.6.13 -> found phpunit/phpunit[9.6.13, ..., 9.6.31] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[11.0.0, ..., 11.1.9] require phpunit/phpunit ^10.5.19 -> found phpunit/phpunit[10.5.19, ..., 10.5.60] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[11.2.0, ..., 11.2.9] require phpunit/phpunit ^10.5.19 || ^11.5.3 -> found phpunit/phpunit[10.5.19, ..., 10.5.60, 11.5.3, ..., 11.5.46] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.0.0, ..., 8.0.1] require jcalderonzumba/mink-phantomjs-driver dev-master#10d7c48c9a4129463052321b52450d98983c4332 -> found jcalderonzumba/mink-phantomjs-driver[dev-master, 0.4.x-dev (alias of dev-master)] but it does not match your minimum-stability.
+    - drupal/core-dev[8.0.2, ..., 8.2.6] require phpunit/phpunit ~4.8 -> found phpunit/phpunit[4.8.0, ..., 4.8.36] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.2.7, ..., 8.3.9] require phpunit/phpunit >=4.8.28 <5 -> found phpunit/phpunit[4.8.28, ..., 4.8.36] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.4.0, ..., 8.4.8] require phpunit/phpunit >=4.8.35 <5 -> found phpunit/phpunit[4.8.35, 4.8.36] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.5.0, ..., 8.5.15] require phpunit/phpunit ^4.8.35 || ^6.1 -> found phpunit/phpunit[4.8.35, 4.8.36, 6.1.0, ..., 6.5.14] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.6.0, ..., 8.7.14] require phpunit/phpunit ^4.8.35 || ^6.5 -> found phpunit/phpunit[4.8.35, 4.8.36, 6.5.0, ..., 6.5.14] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[8.8.0, ..., 8.9.20] require phpunit/phpunit ^6.5 || ^7 -> found phpunit/phpunit[6.5.0, ..., 6.5.14, 7.0.0, ..., 7.5.20] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[9.0.0, ..., 9.0.14] require phpunit/phpunit ^8.4.1 -> found phpunit/phpunit[8.4.1, ..., 8.5.50] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[9.1.0, ..., 9.1.15] require phpunit/phpunit ^8.4.1 || ^9 -> found phpunit/phpunit[8.4.1, ..., 8.5.50, 9.0.0, ..., 9.6.31] but it conflicts with your root composer.json require (^12.5).
+    - drupal/core-dev[9.2.0, ..., 9.5.11] require phpunit/phpunit ^8.5.14 || ^9 -> found phpunit/phpunit[8.5.14, ..., 8.5.50, 9.0.0, ..., 9.6.31] but it conflicts with your root composer.json require (^12.5).
+
+Use the option --with-all-dependencies (-W) to allow upgrades, downgrades and removals for packages currently locked to specific versions.
+You can also try re-running composer require with an explicit version constraint, e.g. "composer require drupal/core-dev:*" to figure out if any version is installable, or "composer require drupal/core-dev:^2.1" if you know which you need.
+
+Installation failed, reverting ./composer.json and ./composer.lock to their original content.
+Composer [require --dev drupal/core-dev] failed, composer command failed: exit status 2. stderr=
+robdaviswork@192 code % ddev composer require --dev drupal/core-dev
+./composer.json has been updated
+Running composer update drupal/core-dev
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 1 install, 0 updates, 0 removals
+  - Locking drupal/core-dev (8.0.0-beta15)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing drupal/core-dev (8.0.0-beta15)
+Package doctrine/annotations is abandoned, you should avoid using it. No replacement was suggested.
+Generating autoload files
+68 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^8.0@beta for drupal/core-dev
+robdaviswork@192 code % ./vendor/bin/phpunit -c web/phpunit.xml web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+PHP Warning:  Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+
+Warning: Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Error in bootstrap script: Error:
+Class "Behat\Mink\Element\TraversableElement" not found
+#0 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(576): include()
+#1 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/Users/robdavis...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('Drupal\\Tests\\Do...')
+#3 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php(148): class_alias('\\Drupal\\Tests\\D...', '\\Behat\\Mink\\Ele...', true)
+#4 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(61): include_once('/Users/robdavis...')
+#5 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(36): PHPUnit\TextUI\Configuration\BootstrapLoader->load('/Users/robdavis...')
+#6 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(132): PHPUnit\TextUI\Configuration\BootstrapLoader->handle(Object(PHPUnit\TextUI\Configuration\Configuration))
+#7 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#8 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/bin/phpunit(122): include('/Users/robdavis...')
+#9 {main}
+robdaviswork@192 code % ddev drush cr
+ [success] Cache rebuild complete.
+robdaviswork@192 code % git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   composer.json
+        modified:   composer.lock
+        deleted:    docs/testing/howto.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/testing/manual/
+        docs/testing/phpunit/
+        web/modules/custom/oyw_salesforce/tests/
+        web/phpunit.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+robdaviswork@192 code % git add .
+robdaviswork@192 code % git commit -am "partial unfinished attempt at phpunit"
+[main 9a93698] partial unfinished attempt at phpunit
+ 7 files changed, 3203 insertions(+), 317 deletions(-)
+ create mode 100644 docs/testing/manual/Screenshot 2025-12-08 at 11.48.38.png
+ rename docs/testing/{ => phpunit}/howto.md (100%)
+ create mode 100644 docs/testing/phpunit/install-phpunit-composer.md
+ create mode 100644 web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+ create mode 100644 web/phpunit.xml
+robdaviswork@192 code % git push origin main
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 150.08 KiB | 2.73 MiB/s, done.
+Total 19 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To github.com:therobyouknow/oneyoungworld-assignment.git
+   7a66410..9a93698  main -> main
+robdaviswork@192 code % ./vendor/bin/phpunit -c web/phpunit.xml web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+PHP Warning:  Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+
+Warning: Class "\Drupal\Tests\DocumentElement" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php on line 148
+PHPUnit 12.5.1 by Sebastian Bergmann and contributors.
+
+Error in bootstrap script: Error:
+Class "Behat\Mink\Element\TraversableElement" not found
+#0 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(576): include()
+#1 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/Users/robdavis...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('Drupal\\Tests\\Do...')
+#3 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/bootstrap.php(148): class_alias('\\Drupal\\Tests\\D...', '\\Behat\\Mink\\Ele...', true)
+#4 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(61): include_once('/Users/robdavis...')
+#5 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/BootstrapLoader.php(36): PHPUnit\TextUI\Configuration\BootstrapLoader->load('/Users/robdavis...')
+#6 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(132): PHPUnit\TextUI\Configuration\BootstrapLoader->handle(Object(PHPUnit\TextUI\Configuration\Configuration))
+#7 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#8 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/bin/phpunit(122): include('/Users/robdavis...')
+#9 {main}
+robdaviswork@192 code % ddev composer install behat/mink
+Invalid argument behat/mink. Use "composer require behat/mink" instead to add packages to your composer.json.
+Composer [install behat/mink] failed, composer command failed: exit status 1. stderr=
+robdaviswork@192 code % ddev composer require behat/mink
+The package you required is recommended to be placed in require-dev (because it is tagged as "testing") but you did not use --dev.
+Do you want to re-run the command with --dev? [yes]? yes
+./composer.json has been updated
+Running composer update behat/mink
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 2 installs, 0 updates, 0 removals
+  - Locking behat/mink (v1.13.0)
+  - Locking symfony/css-selector (v7.4.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 2 installs, 0 updates, 0 removals
+  - Downloading symfony/css-selector (v7.4.0)
+  - Downloading behat/mink (v1.13.0)
+  - Installing symfony/css-selector (v7.4.0): Extracting archive
+  - Installing behat/mink (v1.13.0): Extracting archive
+4 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Package doctrine/annotations is abandoned, you should avoid using it. No replacement was suggested.
+Generating autoload files
+69 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^1.13 for behat/mink
+robdaviswork@192 code % ddev drush cr
+ [success] Cache rebuild complete.
+robdaviswork@192 code % ./vendor/bin/phpunit -c web/phpunit.xml web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php
+HTML output directory sites/simpletest/browser_output is not a writable directory.
+
+PHP Warning:  Class "Drupal\TestTools\PhpUnitCompatibility\PhpUnit12\TestCompatibilityTrait" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/PhpUnitCompatibilityTrait.php on line 12
+
+Warning: Class "Drupal\TestTools\PhpUnitCompatibility\PhpUnit12\TestCompatibilityTrait" not found in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/PhpUnitCompatibilityTrait.php on line 12
+PHP Fatal error:  During class fetch: Uncaught RuntimeException: The autoloader expected class "Drupal\Tests\PhpUnitCompatibilityTrait" to be defined in file "/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/PhpUnitCompatibilityTrait.php". The file was found but the class was not in it, the class name or namespace probably has a typo. in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php:360
+Stack trace:
+#0 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php(317): Symfony\Component\ErrorHandler\DebugClassLoader->checkClass('Drupal\\Tests\\Ph...', '/Users/robdavis...')
+#1 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/UnitTestCase.php(36): Symfony\Component\ErrorHandler\DebugClassLoader->loadClass('Drupal\\Tests\\Ph...')
+#2 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php(306): include('/Users/robdavis...')
+#3 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php(17): Symfony\Component\ErrorHandler\DebugClassLoader->loadClass('Drupal\\Tests\\Un...')
+#4 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php(116): require_once('/Users/robdavis...')
+#5 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php(49): PHPUnit\Runner\TestSuiteLoader->loadSuiteClassFile('/Users/robdavis...')
+#6 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/TestSuiteBuilder.php(119): PHPUnit\Runner\TestSuiteLoader->load('/Users/robdavis...')
+#7 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/TestSuiteBuilder.php(58): PHPUnit\TextUI\Configuration\TestSuiteBuilder->testSuiteFromPath('/Users/robdavis...', Array)
+#8 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(389): PHPUnit\TextUI\Configuration\TestSuiteBuilder->build(Object(PHPUnit\TextUI\Configuration\Configuration))
+#9 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(196): PHPUnit\TextUI\Application->buildTestSuite(Object(PHPUnit\TextUI\Configuration\Configuration))
+#10 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#11 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/bin/phpunit(122): include('/Users/robdavis...')
+#12 {main} in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/UnitTestCase.php on line 36
+
+Fatal error: During class fetch: Uncaught RuntimeException: The autoloader expected class "Drupal\Tests\PhpUnitCompatibilityTrait" to be defined in file "/Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/PhpUnitCompatibilityTrait.php". The file was found but the class was not in it, the class name or namespace probably has a typo. in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php:360
+Stack trace:
+#0 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php(317): Symfony\Component\ErrorHandler\DebugClassLoader->checkClass('Drupal\\Tests\\Ph...', '/Users/robdavis...')
+#1 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/UnitTestCase.php(36): Symfony\Component\ErrorHandler\DebugClassLoader->loadClass('Drupal\\Tests\\Ph...')
+#2 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/symfony/error-handler/DebugClassLoader.php(306): include('/Users/robdavis...')
+#3 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/modules/custom/oyw_salesforce/tests/src/Unit/OywRestClientTest.php(17): Symfony\Component\ErrorHandler\DebugClassLoader->loadClass('Drupal\\Tests\\Un...')
+#4 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php(116): require_once('/Users/robdavis...')
+#5 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php(49): PHPUnit\Runner\TestSuiteLoader->loadSuiteClassFile('/Users/robdavis...')
+#6 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/TestSuiteBuilder.php(119): PHPUnit\Runner\TestSuiteLoader->load('/Users/robdavis...')
+#7 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Configuration/TestSuiteBuilder.php(58): PHPUnit\TextUI\Configuration\TestSuiteBuilder->testSuiteFromPath('/Users/robdavis...', Array)
+#8 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(389): PHPUnit\TextUI\Configuration\TestSuiteBuilder->build(Object(PHPUnit\TextUI\Configuration\Configuration))
+#9 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/src/TextUI/Application.php(196): PHPUnit\TextUI\Application->buildTestSuite(Object(PHPUnit\TextUI\Configuration\Configuration))
+#10 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/phpunit/phpunit/phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#11 /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/vendor/bin/phpunit(122): include('/Users/robdavis...')
+#12 {main} in /Users/robdaviswork/2-work/06-work-search/2-job-applications/1-open/08-interview-prep-or-assignment-work/one-young-world/3-test/code/web/core/tests/Drupal/Tests/UnitTestCase.php on line 36
+robdaviswork@192 code % 
