@@ -15,10 +15,18 @@ use GuzzleHttp\Psr7\Response;
  *
  */
 class SalesforceFieldValues {
+
+  function aFunction() {
+    $client = \Drupal::service('oyw_salesforce.oyw_rest_client');
+    $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']");
+  }
 }
 
 
 /*
+
+
+$Door = \Drupal::service('custom_service.door')
 
 
 ● Create a new class called "SalesforceFieldValues" that is run by the "options_allowed_values" hook, which populates the values for the "field_gender" field 

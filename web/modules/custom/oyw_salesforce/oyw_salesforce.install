@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\field\Entity\FieldStorageConfig;
+
+// credit: https://gemini.google.com/share/0b5a0e9ede49
+
+function oyw_salesforce_update_110001() {
+  // Load the field storage config (replace 'node' and 'field_my_list').
+  $field_storage = FieldStorageConfig::loadByName('node', 'field_gender');
+
+  if ($field_storage) {
+    $field_storage->setSetting(
+      'allowed_values_function',
+      'oyw_salesforce_allowed_values_function' // The name of your function.
+    );
+    $field_storage->save();
+  }
+}
