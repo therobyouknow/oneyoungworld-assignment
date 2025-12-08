@@ -11,15 +11,7 @@ class SalesforceFieldValues {
 
   public static function getPicklistValues() {
     $client = \Drupal::service('oyw_salesforce.oyw_rest_client');
-    //$options = $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']");
-
-  
-  $options = [
-    1 => 'male',
-    2 => 'female',
-    3 => 'other 1',
-    4 => 'other 2',
-  ];
+    $options = $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']");
 
     return $options;
   }
