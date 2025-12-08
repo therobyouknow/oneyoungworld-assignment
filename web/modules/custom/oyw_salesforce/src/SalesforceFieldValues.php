@@ -16,3 +16,16 @@ use GuzzleHttp\Psr7\Response;
  */
 class SalesforceFieldValues {
 }
+
+
+/*
+
+
+● Create a new class called "SalesforceFieldValues" that is run by the "options_allowed_values" hook, which populates the values for the "field_gender" field 
+○ The class should call the "getPicklistValues" client method like so: 
+$client->getPicklistValues('field_gender', "['Contact', 'Gender__c']") 
+
+
+
+
+*/

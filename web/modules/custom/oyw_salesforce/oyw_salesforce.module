@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Provides the allowed values for a specific list field.
+ *
+ * @param \Drupal\Core\Field\FieldStorageDefinitionInterface $definition
+ *   The field storage definition.
+ * @param \Drupal\Core\Entity\ContentEntityInterface $entity
+ *   The entity the field is attached to.
+ * @param bool $cacheable
+ *   A boolean indicating whether the results are cacheable.
+ *
+ * @return array
+ *   An associative array of allowed values.
+ * 
+ * 
+ *  credit: https://drupal.stackexchange.com/a/242011/1082
+ * 
+ */
+function oyw_salesforce_allowed_values_function(\Drupal\Core\Field\FieldStorageDefinitionInterface $definition, \Drupal\Core\Entity\ContentEntityInterface $entity = NULL, $cacheable) {
+  $options = [
+    1 => 'Option A',
+    2 => 'Option B',
+    3 => 'Option C',
+  ];
+  // You can add dynamic logic here to alter $options based on the $entity context.
+
+  // If the values are cacheable, set $cacheable to TRUE.
+  $cacheable = TRUE;
+
+  return $options;
+}
