@@ -26,6 +26,6 @@ class SalesforceFieldValues {
 $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']") 
 
 
-
+$client->getPicklistValues('field_gender', "['Contact', 'Gender__c']") 
 
 */

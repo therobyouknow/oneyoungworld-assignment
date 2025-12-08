@@ -22,7 +22,7 @@ class OywRestClient extends RestClient {
    *
    * 
    */
-  public function getPicklistValues($name, $record_t, $field_name) {
-    $this->apiCall("ui-api/object-info/$name/picklist-values/$record_t ype/$field_name"); 
+  public function getPicklistValues($name, $record_type, $field_name) {
+    $this->apiCall("ui-api/object-info/$name/picklist-values/$record_type/$field_name"); 
   }
 }

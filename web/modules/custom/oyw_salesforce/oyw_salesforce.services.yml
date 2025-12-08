@@ -1,17 +1,6 @@
 services:
 
-  # Defines a simple service which requires no parameter for its constructor.
-  example.simple:
+  oyw_salesforce.salesforce_field_values:
     class: Drupal\oyw_salesforce\OywRestClient
-
-  # Defines a service which requires the module_handler for its constructor.
-  example.with_module_handler:
-    class: Drupal\example\WithModuleHandler
-    arguments: ['@module_handler', '%example.parameter%']
-
-parameters:
-  example.parameter: TRUE
-
-
 
 # credit: https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/structure-of-a-service-file
