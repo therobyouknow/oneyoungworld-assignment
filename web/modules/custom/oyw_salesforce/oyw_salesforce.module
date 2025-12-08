@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\oyw_salesforce\SalesforceFieldValues;
+
 /**
  * Provides the allowed values for a specific list field.
  *
@@ -18,12 +20,11 @@
  * 
  */
 function oyw_salesforce_allowed_values_function(\Drupal\Core\Field\FieldStorageDefinitionInterface $definition, \Drupal\Core\Entity\ContentEntityInterface $entity = NULL, $cacheable) {
-  $options = [
-    1 => 'male',
-    2 => 'female',
-    3 => 'other 1',
-    4 => 'other 2',
-  ];
+  
+ $options = SalesforceFieldValues::getPicklistValues();
+
+
+
   // You can add dynamic logic here to alter $options based on the $entity context.
 
   // If the values are cacheable, set $cacheable to TRUE.

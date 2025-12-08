@@ -2,23 +2,26 @@
 
 namespace Drupal\oyw_salesforce;
 
-use Drupal\Component\Utility\Random;
-use Drupal\salesforce\Rest\RestClient;
-use Drupal\salesforce\Rest\RestResponse;
-use Drupal\salesforce\Rest\RestResponseDescribe;
-use Drupal\salesforce\SelectQueryInterface;
-use Drupal\salesforce\SelectQueryResult;
-use Drupal\salesforce\SFID;
-use GuzzleHttp\Psr7\Response;
+
 
 /**
  *
  */
 class SalesforceFieldValues {
 
-  function aFunction() {
+  public static function getPicklistValues() {
     $client = \Drupal::service('oyw_salesforce.oyw_rest_client');
-    $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']");
+    //$options = $client->getPicklistValues('field_gender', "['Contact', 'Gender__c']");
+
+  
+  $options = [
+    1 => 'male',
+    2 => 'female',
+    3 => 'other 1',
+    4 => 'other 2',
+  ];
+
+    return $options;
   }
 }
 
