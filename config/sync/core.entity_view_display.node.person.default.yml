@@ -1,0 +1,37 @@
+uuid: c87f396c-bc5e-49aa-8c35-f5f2dddd130a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_gender
+    - field.field.node.person.field_name
+    - node.type.person
+  module:
+    - options
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_gender:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
