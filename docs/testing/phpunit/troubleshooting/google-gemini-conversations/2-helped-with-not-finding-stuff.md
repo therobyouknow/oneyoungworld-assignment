@@ -2,6 +2,16 @@ https://gemini.google.com/share/d3420ed0f14f
 
 (This helped get past the not finding stuff)
 
+I asked:
+with phpunit on Drupal, why do I get this error:
+
+
+
+Fatal error: During class fetch: Uncaught RuntimeException: The autoloader expected class "Drupal\Tests\PhpUnitCompatibilityTrait" to be defined in file "/var/www/html/web/core/tests/Drupal/Tests/PhpUnitCompatibilityTrait.php". The file was found but the class was not in it, the class name or namespace probably has a typo. in /var/www/html/vendor/symfony/error-handler/DebugClassLoader.php:360
+
+
+
+
 Thank you for clarifying your PHPUnit version\! That completely changes the context, as **PHPUnit 12.5.2** is a very recent version, making the original diagnosis of an *older* version incorrect.
 
 Since you are using a much **newer** version of PHPUnit than is currently required or fully supported by stable versions of Drupal, the problem is a **forward-compatibility issue**, which can present with the exact same autoloader failure.
