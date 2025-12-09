@@ -5,3 +5,7 @@ package: Custom
 core_version_requirement: ^11
 dependencies:
   - salesforce:salesforce
+
+# 👇 You MUST add this section for PHPUnit Unit Tests!
+test_dependencies:
+  - salesforce:salesforce

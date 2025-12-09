@@ -59,8 +59,8 @@ class OywRestClientTest extends UnitTestCase {
     // To allow the RestClient constructor to run without errors, we need a 
     // Salesforce Settings service and a Token service, which are dependencies 
     // of the RestClient constructor in the salesforce module.
-    $settings = $this->prophesize('Drupal\salesforce\SalesforceClientSettings');
-    $token_service = $this->prophesize('Drupal\salesforce\SalesforceAuthProvider\SalesforceAuthProviderInterface');
+    //$settings = $this->prophesize('Drupal\salesforce\SalesforceClientSettings');
+    //$token_service = $this->prophesize('Drupal\salesforce\SalesforceAuthProvider\SalesforceAuthProviderInterface');
     
     // The class under test is an extension of RestClient, whose apiCall is 
     // explicitly short-circuited in OywRestClient.

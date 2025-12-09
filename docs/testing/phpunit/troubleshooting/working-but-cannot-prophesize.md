@@ -1,9 +1,9 @@
 
-Tried this first: https://gemini.google.com/share/a81dc572f8d6
+1 Tried this first: https://gemini.google.com/share/a81dc572f8d6
 
-This conversation helped me advance: https://gemini.google.com/share/d3420ed0f14f
+2 This conversation helped me advance: https://gemini.google.com/share/d3420ed0f14f
 
-
+3 This conversation helped further: https://gemini.google.com/share/f87d0b788c17
 
 robdaviswork@192 code % git status
 On branch main
