@@ -14,3 +14,6 @@ https://www.drupal.org/project/permissions_by_term/issues/3408309
 
 https://www.drush.org/13.x/contribute/unish/#usage
 
+https://www.drupal.org/project/drupal/issues/3536169
+
+https://www.drupal.org/project/drupal/issues/3346242s
